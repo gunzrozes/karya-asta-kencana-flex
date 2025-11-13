@@ -1,0 +1,23 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Kontak — CV. Karya Asta Kencana</title><link rel="stylesheet" href="css/style.css"></head><body><header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo">KA</div>
+      <div>
+        <div style="font-weight:800">CV. KARYA ASTA KENCANA</div>
+        <div style="font-size:12px;color:var(--muted)">Jasa Konstruksi & Kontraktor</div>
+      </div>
+    </div>
+    <nav aria-label="main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">Tentang</a>
+      <a href="administrasi.html">Data Admin</a>
+      <a href="services.html">Layanan</a>
+      <a href="pengalaman.html">Pengalaman</a>
+      <a href="kode-etik.html">Kode Etik</a>
+      <a href="pengurus.html">Pengurus</a>
+      <a href="portofolio.html">Portofolio</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+<main class="container"><section><h2>Kontak</h2><div class="card" style="display:grid;grid-template-columns:1fr 320px;gap:14px"><div><form id="contactForm"><input type="text" id="name" placeholder="Nama" required style="width:100%;margin-bottom:8px;padding:10px;border-radius:8px;border:1px solid #eef2f7"><input type="email" id="email" placeholder="Email" required style="width:100%;margin-bottom:8px;padding:10px;border-radius:8px;border:1px solid #eef2f7"><input type="text" id="phone" placeholder="No. WA" required style="width:100%;margin-bottom:8px;padding:10px;border-radius:8px;border:1px solid #eef2f7"><textarea id="message" rows="5" placeholder="Pesan" required style="width:100%;padding:10px;border-radius:8px;border:1px solid #eef2f7"></textarea><button type="submit" style="margin-top:8px;padding:10px 14px;border-radius:8px;background:var(--primary);color:#fff;border:0">Kirim</button></form><script>document.getElementById('contactForm').addEventListener('submit', function(e){e.preventDefault();var name=document.getElementById('name').value;var email=document.getElementById('email').value;var phone=document.getElementById('phone').value;var msg=document.getElementById('message').value;var subject=encodeURIComponent('Permintaan Penawaran — '+name);var body=encodeURIComponent('Nama: '+name+'\nEmail: '+email+'\nWA: '+phone+'\n\nPesan:\n'+msg);window.location.href='mailto:info@karyaastakencana.example?subject='+subject+'&body='+body;});</script></div><div><div style="margin-bottom:12px"><strong>Alamat</strong><div class="muted">[Alamat kantor]</div></div><div style="margin-bottom:12px"><strong>Telepon / WA</strong><div class="muted">+62 8xx-xxxx-xxxx</div></div><div style="margin-bottom:12px"><strong>Email</strong><div class="muted">info@karyaastakencana.example</div></div><div style="margin-bottom:12px"><strong>Sosial Media</strong><div class="muted">Instagram: @karya.astakencana<br>TikTok: @karya.astakencana</div></div></div></div></section></main><footer><div class="container"><div style="color:var(--muted)">IG: @karya.astakencana · TikTok: @karya.astakencana</div></div></footer></body></html>

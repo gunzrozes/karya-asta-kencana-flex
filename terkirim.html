@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Pesan Terkirim — CV. Karya Asta Kencana</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: var(--bg, #fafafa);
+      color: #222;
+      text-align: center;
+      font-family: system-ui, sans-serif;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 40px 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      animation: fadeIn 0.8s ease-in-out;
+      max-width: 420px;
+    }
+
+    /* ANIMASI IKON CENTANG */
+    .checkmark {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: block;
+      stroke-width: 3;
+      stroke: #fff;
+      stroke-miterlimit: 10;
+      margin: 0 auto 20px auto;
+      box-shadow: inset 0px 0px 0px #d4a000;
+      animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+      background: var(--primary, #d4a000);
+      position: relative;
+    }
+
+    .checkmark__check {
+      transform-origin: 50% 50%;
+      stroke-dasharray: 48;
+      stroke-dashoffset: 48;
+      animation: stroke 0.5s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+    }
+
+    @keyframes stroke {
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes scale {
+      0%, 100% { transform: none; }
+      50% { transform: scale3d(1.1, 1.1, 1); }
+    }
+    @keyframes fill {
+      100% { box-shadow: inset 0px 0px 0px 80px #d4a000; }
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+      color: var(--primary, #d4a000);
+      margin-bottom: 12px;
+    }
+    p {
+      color: #555;
+      margin-bottom: 22px;
+      line-height: 1.6;
+    }
+
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: var(--primary, #d4a000);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #b88d00;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- ANIMASI CENTANG -->
+    <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+      <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+      <path class="checkmark__check" fill="none" stroke="#fff" stroke-width="4" d="M14 27l7 7 16-16"/>
+    </svg>
+
+    <h2>Pesan Berhasil Dikirim</h2>
+    <p>Terima kasih telah menghubungi <strong>CV. Karya Asta Kencana</strong>.<br>
+    Kami akan segera menanggapi pesan Anda melalui email atau WhatsApp.</p>
+    <a href="index.html" class="button">Kembali ke Beranda</a>
+  </div>
+
+  <footer style="margin-top:40px;font-size:13px;color:#888">
+    IG: @karya.astakencana · TikTok: @karya.astakencana
+  </footer>
+</body>
+</html>
